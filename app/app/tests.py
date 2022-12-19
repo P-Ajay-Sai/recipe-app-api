@@ -1,4 +1,4 @@
-""""
+"""
 Sample test 
 """
 from django.test import SimpleTestCase
@@ -12,4 +12,4 @@ class CalcTest(SimpleTestCase):
 
     def test_subtract_numbers(self):
         res=calc.subtract(10,2)
-        return self.assertEqual(res,8)
+        self.assertEqual(res,8)
